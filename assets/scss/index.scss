@@ -1,0 +1,25 @@
+body{
+    max-width: 100%;
+}
+.container{
+    width: 1216px;
+    max-width: 100%;
+    margin: auto;
+    @media screen and (max-width: 656px) {
+        &:not(:has(.min-container)){
+            padding: 0px 20px;
+            max-width: calc(100% - 40px);
+        }
+    }
+}
+.min-container{
+    width: 560px;
+    max-width: 100%;
+    margin: auto;
+    @media screen and (max-width: 656px) {
+        padding: 0px 20px;
+        max-width: calc(100% - 40px);
+    }
+}
+@import 'fontes';
+@import 'page-login';

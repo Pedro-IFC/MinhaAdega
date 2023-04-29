@@ -1,0 +1,96 @@
+body {
+  max-width: 100%;
+}
+
+.container {
+  width: 1216px;
+  max-width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 656px) {
+  .container:not(:has(.min-container)) {
+    padding: 0px 20px;
+    max-width: calc(100% - 40px);
+  }
+}
+
+.min-container {
+  width: 560px;
+  max-width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 656px) {
+  .min-container {
+    padding: 0px 20px;
+    max-width: calc(100% - 40px);
+  }
+}
+
+.login-page {
+  background-color: black;
+  margin: 0px;
+}
+.login-page .top {
+  width: 100%;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+}
+.login-page .top img {
+  width: 240px;
+  height: 240px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 656px) {
+  .login-page .top img {
+    width: calc(100% - 40px);
+    height: auto;
+  }
+}
+.login-page .login form {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+.login-page .login form input {
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #5e2129;
+  padding: 14px;
+  width: 40%;
+  color: #5e2129;
+}
+.login-page .login form input::-moz-placeholder {
+  color: #5e2129;
+}
+.login-page .login form input::placeholder {
+  color: #5e2129;
+}
+@media screen and (max-width: 656px) {
+  .login-page .login form input {
+    width: 100%;
+  }
+}
+.login-page .login form button {
+  margin: auto;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #5e2129;
+  padding: 14px;
+  width: 40%;
+  background-color: #5e2129;
+  transition: all 0.3s;
+}
+.login-page .login form button:hover {
+  background-color: #000;
+  color: #5e2129;
+}
+@media screen and (max-width: 656px) {
+  .login-page .login form button {
+    width: 100%;
+  }
+}
